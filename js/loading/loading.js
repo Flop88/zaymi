@@ -3,7 +3,7 @@ var body = document.querySelector('body'),
     counter = document.querySelector('.count'),
     h2text = document.querySelector('.text_done'),
     i = 0,
-    throttle = 0.9; // 0-1
+    throttle = 0.3; // 0-1
 
 (function draw() {
   if(i <= 100) {
@@ -17,7 +17,8 @@ var body = document.querySelector('body'),
       i = i + r;
     }
   } else {;
-    bar.className += " done";
-    h2text.className += " done";
+    // bar.className += " done";
+    // h2text.className += " done";
+    document.location.replace("finish.html");
   }
 })();
